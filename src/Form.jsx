@@ -1,6 +1,8 @@
 import React from "react";
 import { useFormik } from "formik";
 
+// User name: <name>; User occupation: <occupation>
+
 const Form = () => {
   const formik = useFormik({
     initialValues: {
