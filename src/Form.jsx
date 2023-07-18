@@ -9,8 +9,12 @@ const Form = () => {
       username: "",
       occupation: "",
     },
-    onSubmit: (values) => {
-      // Handle form submission
+    onSubmit: (values, { resetForm }) => {
+      const userName = values.username;
+      const userOccupation = values.occupation;
+      console.log(`User name: ${userName}; User occupation: ${userOccupation}`);
+      alert(`User name: ${userName}; User occupation: ${userOccupation}`);
+      resetForm();
     },
     validate: (values) => {
       // Perform form field validation
